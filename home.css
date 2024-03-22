@@ -1,0 +1,30 @@
+#home_mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#home_midImage{
+    display: flex;
+    height: 91%;
+    margin: auto 0;
+}
+
+@media screen and (max-width: 1290px) {
+    #home_mid{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #home_midImage{
+        height: auto;
+        width: 75%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #home_midImage {
+        width: 95%;
+    }
+}

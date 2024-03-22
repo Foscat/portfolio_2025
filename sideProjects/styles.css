@@ -1,0 +1,16 @@
+header {
+    background-image: url("/images/side\ projects/greenhouseControls.jpg");
+}
+
+header h1,
+header h2 {
+    color: var(--primary);
+    text-shadow: 15px 8px 12px var(--secondary);
+    background-color: rgba(214, 213, 213, 0.791);
+}
+
+.rambleBox img.shortie{
+    width: auto;
+    max-height: 600px;
+    min-height: 300px;
+}

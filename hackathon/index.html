@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Portfolio website for the man, the myth, the legend that is Kyle Foster. This page showcases the impressive story of how a group of junior developers beat a room of seanior dev teams.."
+    />
+    <link rel="icon" href="/images/icongroup.jpeg" />
+    <link rel="apple-touch-icon" href="/images/icongroup.jpeg" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/root.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Kyle Foster - Diamler Hacakthon</title>
+  </head>
+  <body id="hackathon">
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Kyle Foster - Portfolio</a>
+      <div id="navBurger">
+        <span id="navBurger_icon" class="clickable">&#x2630;</span>
+        <div id="navBurger_menu">
+          <a href="/codestream/">
+            <button class="btn btn-sm btn-outline-light" type="submit">
+              Work Experiance
+            </button>
+          </a>
+          <a href="/hackathon/">
+            <button class="btn btn-sm btn-outline-light active" type="submit">
+              Hacakthon Win
+            </button>
+          </a>
+          <a href="/sideProjects/">
+            <button class="btn btn-sm btn-outline-light" type="submit">
+              Personal Projects
+            </button>
+          </a>
+          <a href="/smu/">
+            <button class="btn btn-sm btn-outline-light" type="submit">
+              Education
+            </button>
+          </a>
+        </div>
+      </div>
+      <div id="navBtns">
+        <a href="/codestream/">
+          <button class="btn btn-sm btn-outline-light" type="submit">
+            Work Experiance
+          </button>
+        </a>
+        <a href="/hackathon/">
+          <button class="btn btn-sm btn-outline-light active" type="submit">
+            Hacakthon Win
+          </button>
+        </a>
+        <a href="/sideProjects/">
+          <button class="btn btn-sm btn-outline-light" type="submit">
+            Personal Projects
+          </button>
+        </a>
+        <a href="/smu/">
+          <button class="btn btn-sm btn-outline-light" type="submit">
+            Education
+          </button>
+        </a>
+      </div>
+    </nav>
+    <header>
+      <h1>Daimler Trucking Hackathon</h1>
+      <h2>July 19th-21st 2019</h2>
+    </header>
+    <main id="hackathon">
+      <section class="bigBox rambleBox">
+        <h3>Overview</h3>
+        <hr />
+        <p>
+          The Daimler Trucking Hackathon of 2019 marked a pivotal moment in my
+          journey as a developer. Freshly graduated from my second bootcamp, I
+          attended the event with a friend, initially just for fun. Little did
+          we know, we would be tasked with revolutionizing the repair process
+          for the company. Despite being overlooked by senior teams, our group
+          of junior developers, including my friend and I, banded together to
+          tackle the challenge head-on.
+        </p>
+        <p>
+          Against all odds, our collaborative efforts led to a resounding
+          victory, showcasing our ability to deliver practical solutions
+          tailored to the client's actual needs. Inspired by our success, some
+          of us pooled our winnings to embark on an ambitious endeavor -
+          starting a company to develop the app for Daimler. As the sole
+          developer who joined in, I faced immense challenges, teaching myself
+          React Native to transform the web-based solution into a mobile app.
+          However, despite our best efforts, the venture ultimately faltered due
+          to the actions of our project leader, who engaged in shady backroom
+          deals by signing contracts under his own company rather than the one
+          we established with our winnings.
+        </p>
+        <div class="rb_linkBox">
+          <a
+            href="https://austinstartups.com/21-teams-gather-at-capital-factory-to-hack-daimler-north-americas-voice-technology-for-truck-77ed19862592"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>Read The Article</button>
+          </a>
+          <a href="#reinforce">
+            <button>Hackathon Project</button>
+          </a>
+          <a href="#tech_assist">
+            <button>After Hackthon App Development</button>
+          </a>
+        </div>
+      </section>
+      <img
+        src="/images/hackathon/focus.jpg"
+        alt="Screenshot of the classrooms page of the CSOS platform. Displaying active and epired classrooms attached to the users account."
+        title="Screenshot of the classrooms page of the CSOS platform."
+      />
+      <section class="rambleBox bigBox">
+        <h3 id="reinforce">Hackathon App (Reinforce)</h3>
+        <hr />
+        <div>
+          <h4>The problem</h4>
+          <p>
+            Help the company technicians in repair and maitinance work along
+            with ways to track process speed. This will allow the company to
+            understand when and where slowdowns happen. This system needs to be
+            hands free as possible and should not require the technician to
+            interact with a screen. They also wanted a way for technicians that
+            compleated work fater than the average time to give feedback on how
+            they did it.
+          </p>
+          <hr />
+          <h4>The solution</h4>
+          <p>
+            To address the challenge presented by Daimler, our team leveraged a
+            combination of innovative technologies and collaborative expertise.
+            We began by utilizing my "MERN App Template" as the foundation for
+            the application, taking advantage of its backend capabilities and
+            pre-built sign-in process. With this solid groundwork in place, each
+            member of the team focused on a specific aspect of the project. One
+            teammate developed an .xml parser to efficiently read instruction
+            files, while another dedicated their efforts to creating an AWS
+            Lambda function to handle inputs and step positions. Meanwhile, my
+            friend and I tackled the crucial task of implementing voice
+            interactions with the client. This involved designing a seamless
+            process for technicians to issue commands vocally, transmitting them
+            to the Lambda function, and seamlessly integrating the response back
+            into the application. Additionally, we worked on converting the text
+            of the current step from the parser into speech, ensuring a fluid
+            and intuitive user experience throughout the repair process.
+          </p>
+          <hr />
+          <h4>The outcome</h4>
+          <p>
+            The app developed during the Daimler Trucking Hackathon provided a
+            revolutionary solution to the company's repair and maintenance
+            workflow. By leveraging an automated voice system, technicians could
+            efficiently access truck information and receive step-by-step
+            directions without the need for manual interaction with a screen.
+            This hands-free approach not only improved process speed tracking
+            but also enhanced technician productivity and satisfaction.
+            Additionally, the system allowed technicians to provide valuable
+            feedback on their work, enabling continuous improvement and
+            optimization of repair procedures. The app's success at the
+            hackathon demonstrated its potential to streamline operations and
+            drive efficiency within Daimler's repair process.
+          </p>
+        </div>
+      </section>
+      <img
+        src="/images/hackathon/chatBotting.jpg"
+        alt="Screenshot of the classrooms page of the CSOS platform. Displaying active and epired classrooms attached to the users account."
+        title="Screenshot of the classrooms page of the CSOS platform."
+      />
+      <section class="bigBox rambleBox">
+        <h3 id="tech_assist">Post Hackathon Work (Tech Assist)</h3>
+        <hr />
+        <h4>Transition</h4>
+        <p>
+          After the hackathon we made a company and named it "Reinforce" after
+          our team name from the hackathon. We also changed the name of the app
+          to "Tech Assist" to better represent it as a product of our company. I
+          got a co-working space since I did not have a home office at the time
+          to develop the app. The client gave us some .xml files with some work
+          instructions to use for development and had many changes they wanted
+          to make. Primaraliy the desire to make it a moblie app rather than a
+          website. I was honsetly in way over my head but I was determined to
+          make it work.
+        </p>
+        <hr />
+        <h4>Development & Challenges</h4>
+        <p>
+          After the hackathon and the establishment of our new company, we
+          engaged in several meetings with Daimler to delineate the project's
+          scope and objectives. Participating in these discussions was an
+          invaluable experience for me, as a relatively inexperienced developer
+          at the time. We covered a wide range of topics, including feature
+          requirements, implementation strategies, timelines, and budget
+          considerations, laying the groundwork for the professional development
+          of the application.
+        </p>
+        <p>
+          Given the requirement for a mobile version of the app and the
+          ambiguity surrounding the device platform, I decided to initiate
+          development using React Native. Leveraging my prior experience with
+          React.js, I swiftly adapted to React Native, allowing us to swiftly
+          create a rudimentary prototype compatible with both major platforms.
+        </p>
+        <p>
+          However, transitioning to mobile development presented its own set of
+          challenges. I needed to migrate the parsing logic to a server and
+          develop a micro-service to handle it. Additionally, I faced the task
+          of enhancing the parsing logic to accommodate the intricacies of the
+          XML documents. Originally written in Python and notably complex, I
+          reverse engineered the logic in JavaScript and added the necessary
+          complexity to meet our requirements. I did this conversion in two
+          weeks, where I also successfully expanded the capabilities of the
+          parsing logic, enabling users to access over 500 sets of instructions
+          for 5 different trucks solely through voice prompts.
+        </p>
+        <div class="commandFlow">
+          <p>
+            As an example of the logic flow, consider the scenario where a
+            technician needs to run a <span>[Service_Type]</span> on a
+            <span>[Model_Number]</span>. The program first identifies all
+            documents associated with the specified model number, filters them
+            to locate the document number of the requested service type, and
+            then sends the corresponding XML file to the parser micro-service.
+            Once parsed, the instructions are returned to the app as an array of
+            objects, with each object containing the step instructions as a
+            string and an array of sub-steps if applicable, ready to be read
+            aloud to the user.
+          </p>
+          <img
+            src="/images/hackathon/TechAssistLogo.jpg"
+            alt="App prototype logo"
+            title="Application logo for the Tech Assist app. With a mirophone in the foreground and sound waves in the background."
+          />
+        </div>
+        <hr />
+        <h4>Outcome</h4>
+        <p>
+          Despite the promising start following the hackathon victory, the
+          post-hackathon journey ultimately ended in disappointment and
+          frustration. While we made significant progress in defining project
+          requirements, developing a prototype, and laying the groundwork for
+          further development, unforeseen challenges emerged that derailed our
+          efforts.
+        </p>
+        <p>
+          Regrettably, the project's downfall stemmed from the actions of our
+          team leader, who made unilateral decisions without consulting the rest
+          of the team. In a disheartening turn of events, it was discovered that
+          the team leader had signed contracts with Daimler under a company he
+          owned, sidelining the rest of the team and denying us the opportunity
+          to continue our work on the project. Despite my best efforts to
+          salvage the situation, I found myself cut out of the project entirely,
+          lacking the resources and leverage to rectify the situation.
+        </p>
+        <p>
+          While the outcome was disappointing, the experience served as a
+          valuable lesson in the importance of transparency, communication, and
+          trust within a team dynamic. Although the project did not materialize
+          as intended, the lessons learned and the skills acquired during the
+          post-hackathon work have undoubtedly contributed to my growth as a
+          developer and have prepared me for future challenges and
+          opportunities.
+        </p>
+      </section>
+    </main>
+  </body>
+  <script src="/main.js"></script>
+</html>

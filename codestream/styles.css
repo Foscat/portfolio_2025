@@ -1,0 +1,139 @@
+#csos {
+    background-color: #daf3f6;
+    color: #ffffff;
+}
+
+header {
+    background-image: url("/images/codestream/ourstory.jpg");
+}
+
+header h1,
+header h2 {
+    text-shadow: 15px 20px 12px var(--secondary);
+    color: #1f297a;
+    background-color: #80dde07c;
+    padding: 5px 15px;
+}
+
+
+#csos main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+body#csos section.rambleBox{
+    background-color: #ffffff;
+    border: 1px solid #dbe2ea;
+    box-shadow: 1px 24px 64px rgba(36, 36, 40, .0392156862745098);
+    border-radius: 12px;
+    color: #1f297a;
+}
+
+body#csos hr {
+    background-color: #1f297a;
+}
+
+section.flexRow.flexSE img{
+    width: 40%;
+}
+
+#featureList li{
+    margin: 5px 0;
+    font-size:small;
+    font-weight: 400;
+}
+
+#featureList li a{
+    color: #1f297a;
+}
+
+.featureSection{
+    width: 100%;
+}
+
+
+.featureSection hr {
+    width: 80%;
+    margin: 25px 10% 15px;
+}
+
+.featureBox{
+    width: 80%;
+    margin: 8px 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featureBox h3{
+    text-shadow: 2px 2px 5px #1f297a;
+}
+
+.featureBox .flexRow.flexSB{
+    margin: 3px auto;
+    width: 100%;
+}
+
+.prob_sol_box{
+    color: #ffff;
+    background-color: #1f297a;
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+
+.prob_sol_box p span{
+    color: goldenrod;
+}
+
+.prob_sol_box hr{
+    border-color: #ffff;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.fb_sub{
+    width: 45%;
+    padding: 6px 12px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    color: #1f297a;
+}
+
+.fb_sub img{
+    margin-bottom: 3px;
+}
+
+.fb_sub p{
+    margin: 3px 6px;
+}
+
+.fb_sub.cent{
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 1050px ){
+
+    section.imgSection{
+        flex-direction: column;
+    }
+
+    section.flexRow.flexSE.imgSection img{
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    .featureBox{
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    .fb_sub{
+        width: 100%;
+    }
+}

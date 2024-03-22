@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+/* font-family: "Lexend Deca", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Heebo',sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Golos Text',sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/* font-family: 'Audiowide',cursive; */
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* Root styles and vars START */
+:root {
+    letter-spacing: 1px;
+
+    --white: #ffffff;
+    --black: #242428;
+
+    --darkBlue: #1f297a;
+
+    --darkRed: #a70606;
+
+    --primary_darkest: #0A105C;
+    --primary_dark: #131A77;
+    --primary: #1F2793;
+    --primary_light: #3A42A5;
+    --primary_lighter: #575EB4;
+
+    --secondary_darkest: #00504D;
+    --secondary_dark: #026965;
+    --secondary: #0A817C;
+    --secondary_light: #23908C;
+    --secondary_lighter: #40A09C;
+
+    --accent_darkest: #330559;
+    --accent_dark: #440A74;
+    --accent: #58148F;
+    --accent_light: #6D2FA0;
+    --accent_lighter: #834EAF;
+
+    scroll-behavior: smooth;
+}
+/* Root styles and vars END */
+/* ///////////////////////////////////////////////////////////////////// */
+/* Base element styles START */
+html {
+    background-color: var(--primary_darkest);
+    color: var(--white);
+}
+
+body {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+p {
+    font-family: 'Heebo', sans-serif;
+}
+
+span {
+    font-family: 'Golos Text', sans-serif;
+}
+
+div {
+    border-radius: 6px;
+}
+
+header {
+    height: 85vh;
+    background-image: url("/images/natureRoad_75.png");
+    background-size: cover;
+    background-color: var(--primary_lighter);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0;
+}
+
+header h1,
+header h2 {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    text-shadow: 15px 20px 12px var(--black);
+    color: var(--white);
+    background-color: rgba(48, 47, 47, 0.5);
+}
+
+header h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+header h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--secondary_lighter);
+    z-index: 100;
+}
+
+main section,
+main img {
+    border-radius: 3px;
+}
+/* Base element styles END  */
+/* ///////////////////////////////////////////////////////////////////// */
+/* Navbar styles START */
+#navBurger {
+    display: none;
+    color: var(--white);
+}
+
+#navBtns{
+    display: flex;
+}
+
+#navBtns button{
+    margin: auto 0px auto 6px;
+}
+
+#navBurger_menu{
+    /* display: flex; */
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--secondary_darkest);
+    padding: 8px;
+}
+
+#navBurger_menu a button{
+    width: 100%;
+    margin: 5px 0px;
+}
+/* Navbar styles END */
+/* ///////////////////////////////////////////////////////////////////// */
+/* Quick font classes START */
+.pri_font {
+    font-family: 'Heebo', sans-serif;
+}
+
+.sec_font {
+    font-family: 'Golos Text', sans-serif;
+}
+
+.head_font1 {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.head_font2 {
+    font-family: 'Audiowide', cursive;
+}
+/* Quick font classes END */
+/* ///////////////////////////////////////////////////////////////////// */
+/* Quick display classes START */
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flexSA {
+    justify-content: space-around;
+}
+
+.flexSB {
+    justify-content: space-between;
+}
+
+.flexSE {
+    justify-content: space-evenly;
+}
+
+.flexC {
+    justify-content: center;
+}
+
+.clickable {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Quick Display Classes END */
+/* ///////////////////////////////////////////////////////////////////// */
+/* Main UI classes START */
+
+.rambleBox {
+    background-color: var(--black);
+    color: var(--white);
+    margin: 25px 0;
+    padding: 20px 25px;
+    width: 40%;
+}
+
+.rambleBox.bigBox {
+    width: 75%;
+}
+
+.rambleBox h3 {
+    margin: 8px 0;
+}
+
+.rambleBox h4 i {
+    margin-left: 15px;
+}
+
+.rambleBox hr {
+    border-color: rgba(220, 220, 220, 0.6);
+    margin: 10px auto;
+}
+
+.rambleBox p {
+    margin: 15px 0;
+    font-size: small;
+}
+
+.rambleBox img {
+    width: 80%;
+    margin: 15px 10%;
+}
+
+section.rambleBox {
+    display: flex;
+    flex-direction: column;
+}
+
+section.rambleBox hr {
+    width: 100%;
+    color: var(--white);
+}
+
+
+.rb_linkBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5px 10%;
+}
+
+.rb_linkBox button {
+    margin: 3px;
+    padding: 6px 18px;
+    border-radius: 6px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-family: 'Heebo', sans-serif;
+}
+
+.rb_linkBox button:hover {
+    background-color: var(--primary_light);
+    color: var(--secondary_lighter);
+    transition: all 500ms ease;
+}
+
+/* Main UI classes END */
+/* ///////////////////////////////////////////////////////////////////// */
+/* Responsive styles START */
+
+/* For slightly smaller screens like laptops */
+@media screen and (max-width: 1290px) {
+    .rambleBox,
+    .rambleBox.bigBox {
+        width: 75%;
+        margin: 15px auto;
+    }
+}
+
+/* For smaller screens like laptops or when resizing */
+@media screen and (max-width: 1200px) {
+    #navBurger {
+        display: contents;
+    }
+
+    #navBtns {
+        display: none;
+    }
+
+    #navBurger_menu.hide {
+        display: none;
+    }
+
+    #navBurger_menu.show {
+        display: flex;
+    }
+}
+
+/* For small screens like tablets and cell phones */
+@media screen and (max-height: 700px) {
+    nav.navbar a.navbar-brand {
+        font-size: 20px;
+    }
+
+    nav.navbar {
+        padding: .1rem 1rem;
+    }
+
+    .rambleBox p {
+        margin: 8px 0;
+        font-size: 18px;
+    }
+}
+
+/* For when a user has a cellphone in landscape mode */
+@media screen and (max-width: 700px) and (max-height: 400px) {
+    nav.navbar a.navbar-brand {
+        font-size: 20px;
+    }
+
+    nav.navbar{
+        padding: .2rem 1rem;
+    }
+
+    .rambleBox,
+    .rambleBox.bigBox {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .rambleBox img {
+        width: 100%;
+        margin: 6px 0;
+    }
+   
+}
+
+/* For cell phones in portrait mode */
+@media screen and (max-width: 400px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    nav.navbar a.navbar-brand {
+        font-size: 19px;
+    }
+    
+    .rambleBox,
+    .rambleBox.bigBox{
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .rambleBox img{
+        width: 100%;
+        margin: 6px 0;
+    }
+}
+
+/* Responsive styles END */
+/* ///////////////////////////////////////////////////////////////////// */
