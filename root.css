@@ -79,7 +79,7 @@ div {
 
 header {
     height: 85vh;
-    background-image: url("/images/natureRoad_75.png");
+    background-image: url("/portfolio_2024/images/natureRoad_75.png");
     background-size: cover;
     background-color: var(--primary_lighter);
     display: flex;
