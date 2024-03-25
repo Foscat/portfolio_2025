@@ -15,6 +15,7 @@
 /* Root styles and vars START */
 :root {
     letter-spacing: 1px;
+    font-size: 20px;
 
     --white: #ffffff;
     --black: #242428;
