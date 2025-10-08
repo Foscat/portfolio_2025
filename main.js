@@ -21,7 +21,6 @@ $("#navBurger_icon").on("click", ()=>{
     }else if(showDropdown){
         showDropdown = false;
         burgerMenu.toggleClass("hide", true);
-
         return
     }else{
         showDropdown = true;

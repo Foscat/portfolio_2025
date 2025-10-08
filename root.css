@@ -154,6 +154,26 @@ main img {
     width: 100%;
     margin: 5px 0px;
 }
+
+a>i{
+    border-radius: 3px;
+    margin: 4px 0 0 6px;
+    /* width: 95%; */
+    padding: 5px;
+    font-size: larger;
+    color: var(--white);
+    background-color: var(--primary_darkest);
+  }
+
+a>i:hover{
+    color: var(--primary_darkest);
+    background-color: var(--white);
+}
+
+a>button>i{
+    margin: auto;
+    padding: 0;
+}
 /* Navbar styles END */
 /* ///////////////////////////////////////////////////////////////////// */
 /* Quick font classes START */

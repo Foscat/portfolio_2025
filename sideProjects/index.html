@@ -3,17 +3,37 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="theme-color" content="#000000" />
+    <!-- Reset css to make pages viewable on all browsers -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="portfolio_2025/reset.css"
+    />
+    <script>
+      window.__theme = "bs4";
+    </script>
     <meta
       name="description"
-      content="Portfolio website for the man, the myth, the legend that is Kyle Foster. This page showcases the various side projects he's created over the years. It's a true testimate of his magnificant intelligance."
+      content="Portfolio website for the man, the myth, the legend that is Kyle Foster. This page showcases the various side projects he's created over the years. Truely a testimate of his magnificant intelligance, raw talent and creative vision."
     />
+    <!-- Favicons -->
     <link rel="icon" href="/portfolio_2025/images/icongroup.jpeg" />
     <link rel="apple-touch-icon" href="/portfolio_2025/images/icongroup.jpeg" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -29,8 +49,8 @@
   </head>
   <body>
     <nav class="navbar sticky-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="/portfolio_2025/"
-        >Kyle Foster - Portfolio</a
+      <a r  class="navbar-brand" href="/portfolio_2025/"
+        >Kyle Foster - Side Projects</a
       >
       <div id="navBurger">
         <span id="navBurger_icon" class="clickable">&#x2630;</span>
@@ -56,43 +76,75 @@
             </button>
           </a>
           <a
-            href="/portfolio_2025/Resume2025-Kyle_Foster.pdf"
+            href="../Kyle Foster - Resume.pdf"
             download="Kyle_Foster_Resume.pdf"
+            target="blank"
+            title="Resume display and download"
           >
-            <button class="btn btn-sm btn-outline-light">
-              <i class="fas fa-download"></i> Download Resume
+            <button class="btn btn-sm btn-outline-light" type="button">
+              <i class="fas fa-download"></i> Resume
             </button>
+          </a>
+          <a
+            href="https://github.com/Foscat"
+            title="GitHub Profile"
+            target="blank"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/kylefoster-dev"
+            title="LinkedIn Profile"
+            target="blank"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
           </a>
         </div>
       </div>
       <div id="navBtns">
         <a href="/portfolio_2025/codestream/">
-          <button class="btn btn-sm btn-outline-light" type="submit">
+          <button class="btn btn-sm btn-outline-light" type="button">
             Work Experiance
           </button>
         </a>
         <a href="/portfolio_2025/hackathon/">
-          <button class="btn btn-sm btn-outline-light" type="submit">
+          <button class="btn btn-sm btn-outline-light" type="button">
             Hacakthon Win
           </button>
         </a>
         <a href="/portfolio_2025/sideProjects/">
-          <button class="btn btn-sm btn-outline-light active" type="submit">
+          <button class="btn btn-sm btn-outline-light active" type="button">
             Personal Projects
           </button>
         </a>
         <a href="/portfolio_2025/smu/">
-          <button class="btn btn-sm btn-outline-light" type="submit">
+          <button class="btn btn-sm btn-outline-light" type="button">
             Education
           </button>
         </a>
         <a
-          href="/portfolio_2025/Resume2025-Kyle_Foster.pdf"
+          href="../Kyle Foster - Resume.pdf"
           download="Kyle_Foster_Resume.pdf"
+          target="blank"
+          title="Resume display and download"
         >
-          <button class="btn btn-sm btn-outline-light">
-            <i class="fas fa-download"></i> Download Resume
+          <button class="btn btn-sm btn-outline-light" type="button">
+            <i class="fas fa-download"></i> Resume
           </button>
+        </a>
+        <a
+          href="https://github.com/Foscat"
+          title="GitHub Profile"
+          target="blank"
+        >
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a
+          href="https://linkedin.com/in/kylefoster-dev"
+          title="LinkedIn Profile"
+          target="blank"
+        >
+          <i class="fab fa-linkedin"></i> LinkedIn
         </a>
       </div>
     </nav>
@@ -118,13 +170,13 @@
         </p>
         <div class="rb_linkBox">
           <a href="#greenhouse">
-            <button>Greenhouse Climate Controller</button>
+            <button type="button">Greenhouse Climate Controller</button>
           </a>
           <a href="#enigma">
-            <button>Caesar's Enigma</button>
+            <button type="button">Caesar's Enigma</button>
           </a>
           <a href="#d20">
-            <button>D20 King</button>
+            <button type="button">D20 King</button>
           </a>
         </div>
       </section>
@@ -143,6 +195,8 @@
         </p>
         <img
           src="/portfolio_2025/images/side projects/greenhouseControls.jpg"
+          alt="Greenhouse control board"
+          title="Greenhouse control board"
         />
         <p>
           Strategically positioned temperature and humidity sensors, extended
@@ -162,6 +216,8 @@
         <img
           class="shortie"
           src="/portfolio_2025/images/side projects/greenhouseHookedUp.jpg"
+          alt="Greenhouse control board hooked up and operating"
+          title="Greenhouse control board operating in the field"
         />
         <div class="rb_linkBox">
           <a
@@ -192,7 +248,11 @@
           information during transmission over public networks, ensuring privacy
           and confidentiality.
         </p>
-        <img src="/portfolio_2025/images/side projects/enigma.png" />
+        <img
+          src="/portfolio_2025/images/side projects/enigma.png"
+          alt="Screenshot of Enigma encrypter website"
+          title="Enigma website page"
+        />
         <div class="rb_linkBox">
           <a
             href="https://github.com/Foscat/Enigma"
@@ -225,7 +285,11 @@
           Dungeon Masters and authors of custom modules. "D20 King" aims to fill
           this void
         </p>
-        <img src="/portfolio_2025/images/side projects/d20_dashboard.png" />
+        <img
+          src="/portfolio_2025/images/side projects/d20_dashboard.png"
+          alt="Screenshot of D20 tabletop campaign creator website"
+          title="D20 landing page"
+        />
         <p>
           What truly sets "D20 King" apart is its modular architecture, inspired
           by the collaborative spirit of GitHub repositories. Each "Storybook"
@@ -235,7 +299,11 @@
           populate their worlds with a myriad of "Opponents" and "Treasures,"
           crafting immersive experiences that captivate players' imaginations.
         </p>
-        <img src="/portfolio_2025/images/side projects/d20_oppEditor.png" />
+        <img
+          src="/portfolio_2025/images/side projects/d20_oppEditor.png"
+          alt="Screenshot of D20 opponent editor page"
+          title="Opponent editor"
+        />
         <p>
           I am not sharing any of the code nor do I wish to share the
           development environment with anyone. I fully intend on turning this
